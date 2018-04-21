@@ -1,6 +1,6 @@
 package pl.szkolenie.hello;
 
-public class Chinka {
+public class Choinka {
 
 	public static void main(String[] args) {
 //		for(int y = 0; y<10; y++) {

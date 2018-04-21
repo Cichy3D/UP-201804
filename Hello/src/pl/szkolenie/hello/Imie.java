@@ -6,6 +6,7 @@ public class Imie {
 
 	public static void main(String[] args) {
 		String imie;
+		
 		Scanner scanner = new Scanner(System.in);
 		
 		System.out.print("Podaj swoje imiê: ");
@@ -19,6 +20,7 @@ public class Imie {
 		} else {
 			System.out.println("I ¿egnam...");
 		}
+		
 	}
 
 
