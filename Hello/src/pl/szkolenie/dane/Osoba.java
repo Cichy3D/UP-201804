@@ -3,51 +3,51 @@ package pl.szkolenie.dane;
 import java.util.Date;
 
 public class Osoba {
+
+	private Long id;
+	private String name;
+	private Date birth;
+	private Boolean alife = true;
 	
-	private String nazwa;
-	private Date dataUrodzenia;
-	private String plec;
-	private boolean czyZyle = true;
-	
-	public Osoba() { }
-	
-	public Osoba(String nazwa, Date dataUrodzenia, String plec, boolean czyZyle) {
-		this.nazwa = nazwa;
-		this.dataUrodzenia = dataUrodzenia;
-		this.plec = plec;
-		this.czyZyle = czyZyle;
-		System.out.println("Konstruktor klasy Osoba");
-	}
-	
-	public Osoba(String nazwa, Date dataUrodzenia, String plec) {
-		this(nazwa, dataUrodzenia, plec, true);
+	public Osoba(Long id, String name, Date birth) {
+		this.id = id;
+		this.name = name;
+		this.birth = birth;
+		alife = true;
 	}
 
-	
+	public Osoba() { 
+	}
 
-	public String getNazwa() {
-		return nazwa;
+
+	public Long getId() {
+		return id;
 	}
-	public void setNazwa(String n) {
-		nazwa = n;
+	public void setId(Long id) {
+		this.id = id;
 	}
-	public Date getDataUrodzenia() {
-		return dataUrodzenia;
+	public String getName() {
+		return name;
 	}
-	public void setDataUrodzenia(Date dataUrodzenia) {
-		this.dataUrodzenia = dataUrodzenia;
+	public void setName(String name) {
+		this.name = name;
 	}
-	public String getPlec() {
-		return plec;
+	public Date getBirth() {
+		return birth;
 	}
-	public void setPlec(String plec) {
-		this.plec = plec;
+	public void setBirth(Date birth) {
+		this.birth = birth;
 	}
-	public boolean isCzyZyle() {
-		return czyZyle;
+	public Boolean getAlife() {
+		return alife;
 	}
-	public void setCzyZyle(boolean czyZyle) {
-		this.czyZyle = czyZyle;
+	public void setAlife(Boolean alife) {
+		this.alife = alife;
+	}
+
+	@Override
+	public String toString() {
+		return "Osoba [id=" + id + ", name=" + name + ", birth=" + Dane.df.format(birth) + ", alife=" + alife + "]";
 	}
 	
 	

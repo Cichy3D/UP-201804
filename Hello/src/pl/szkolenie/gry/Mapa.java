@@ -6,7 +6,7 @@ import java.util.Scanner;
 
 public class Mapa {
 	
-	public static int N = 10;
+	public static int N = 20;
 	public static final char SCIANA = '#';
 	public static final char GRACZ = '@';
 	public static final char PUNKT = '$';
@@ -36,6 +36,7 @@ public class Mapa {
 			String odp = SCAN.nextLine().toUpperCase();
 			
 			if(odp.equals("E")) { // wyjœcie
+				System.out.println("Koniec.");
 				break;
 			}
 			
