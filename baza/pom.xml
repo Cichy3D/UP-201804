@@ -5,7 +5,9 @@
   <version>0.0.1-SNAPSHOT</version>
   <name>baza</name>
   <description>baza używająca SQL</description>
-  
+  <properties>
+	    <java.version>1.8</java.version>
+  </properties>
   
   <dependencies>
   
